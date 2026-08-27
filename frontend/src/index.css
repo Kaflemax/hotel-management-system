@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  html {
+    @apply bg-neutral-bg transition-colors duration-200;
+  }
+
+  html.dark {
+    @apply bg-dark-bg;
+  }
+
+  body {
+    @apply bg-transparent font-sans text-body text-neutral-text antialiased;
+  }
+
+  html.dark body {
+    @apply text-dark-text;
+  }
+}
